@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">editor2</string>
+    <string name="menu_checkbox_undo">Undo</string>
+    <string name="menu_add_5_items">Add 5 items</string>
+    <string name="button_undo">undo</string>
+    <string name="developer_email">moonsoo@sai42.net</string>
+    <string name="error_text">오류가 발생했습니다. 개발자에게 오류로그를 보냅니까?</string>
+    <string name="error_toast">개발자에게 오류로그를 보냈습니다.</string>
+</resources>

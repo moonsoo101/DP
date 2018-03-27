@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainFeedCont"
+    android:background="#ffffff"
+    tools:context="com.example.wisebody.editor.MainFeed">
+    <!--android:fitsSystemWindows="true"-->
+
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/col"
+            android:clipToPadding="false">
+            <!--android:fitsSystemWindows="true">-->
+            <!--android:fitsSystemWindows="true"-->
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/mainFeedToolbar"
+                app:collapseIcon="@drawable/ic_pre"
+                android:background="@drawable/searchview_bottomborder"
+                android:clipToPadding="false"
+                android:elevation="40dp">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nestedScroll"
+        android:clipToPadding="false"
+        android:layout_below="@+id/col"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/feedOptCont">
+            <include android:id="@+id/feedOptSelector" layout="@layout/feedbackselector"/>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainfeed_Recy"
+            android:layout_below="@id/feedOptCont">
+        </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/replyRecy"
+        android:background="#ffffff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v7.widget.RecyclerView>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="27.7dp"
+        android:background="#ffffff"
+        android:scaleType="center"
+        android:id="@+id/moreReply"
+        android:src="@drawable/ic_options_color"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3.3dp"
+    android:background="#d8d8d8"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36.7dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="추천 영상"
+            android:textColor="#8a000000"
+            android:textSize="12sp"
+            android:typeface="sans"
+            android:fontFamily="NotoSansCJKkr-Regular"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_upload"
+            android:background="#ffffff"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#b5b5b5"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/recommendVideo">
+    </android.support.v7.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3.3dp"
+        android:background="#d8d8d8"/>
+</LinearLayout>
